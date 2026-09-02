@@ -1,4 +1,4 @@
-package example.Practice1;
+package example.day04.Practice2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
