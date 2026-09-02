@@ -36,7 +36,7 @@ public class TestController {
         return list;
     }
 
-   // [3] 게시물 개별 조회
+   // [3] 게시물 개별 조회2
     @GetMapping("/detail") //http://localhost:8080/test/detail?no=1
     public TestDto testDetail(@RequestParam("no") int no) {
         System.out.println("TestController.testDetail()");
