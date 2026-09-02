@@ -17,7 +17,7 @@ import java.util.ArrayList;
 @RequestMapping("/test")    // 해당 클래스내 메소드들의 공통URL 정의 
 public class TestController {
 
-    // [1] 게시물 등록 
+    // [1] 게시물 등록 3
     @PostMapping //http://localhost:8080/test
     public boolean testWrite(@RequestBody TestDto testDto) {
     System.out.println("TestController.testWrite()");
