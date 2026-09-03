@@ -1,4 +1,4 @@
-package example.day04;
+package example.day04.Exam1;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

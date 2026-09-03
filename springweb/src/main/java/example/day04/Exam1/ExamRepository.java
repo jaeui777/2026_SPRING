@@ -1,4 +1,4 @@
-package example.day04;
+package example.day04.Exam1;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
