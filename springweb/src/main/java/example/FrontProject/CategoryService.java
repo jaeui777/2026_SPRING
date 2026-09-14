@@ -49,6 +49,7 @@ public class CategoryService {
             categoryRepository.deleteById(cno);
             return true;
         }
-    } 
+        return false;
+    }
 }
 

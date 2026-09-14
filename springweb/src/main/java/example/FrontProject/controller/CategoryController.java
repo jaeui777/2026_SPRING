@@ -10,11 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.service.annotation.DeleteExchange;
-
 import example.FrontProject.CategoryService;
 import example.FrontProject.model.dto.CategoryDto;
-import example.FrontProject.model.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 @CrossOrigin(value = "http://localhost:5173")
 @RestController 
