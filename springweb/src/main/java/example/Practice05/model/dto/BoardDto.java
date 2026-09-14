@@ -1,16 +1,16 @@
     package example.Practice05.model.dto;
 
-    import java.time.LocalDateTime;
-    import java.util.ArrayList;
-    import java.util.List;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
-    import example.Practice05.model.Entity.BoardEntity;
-    import lombok.AllArgsConstructor;
-    import lombok.Builder;
-    import lombok.Data;
-    import lombok.NoArgsConstructor;
+import example.Practice05.model.Entity.BoardEntity;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-    @NoArgsConstructor 
+@NoArgsConstructor 
     @AllArgsConstructor 
     @Builder 
     @Data 

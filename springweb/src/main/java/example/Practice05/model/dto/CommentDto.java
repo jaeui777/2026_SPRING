@@ -1,13 +1,12 @@
 package example.Practice05.model.dto;
 
 import java.time.LocalDateTime;
-import example.Practice05.model.Entity.BoardEntity;
+
 import example.Practice05.model.Entity.CommentEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 @NoArgsConstructor 
 @AllArgsConstructor 
 @Builder 
@@ -25,14 +24,13 @@ public class CommentDto {
 
     public CommentEntity toEntity() {
         return CommentEntity.builder()
-        .id(this.id)
         .content(this.content)
         .author(this.author)
         .password(this.password)
         .build();
     }
     
-    public static CommentDto from( BoardEntity entity) {
+    public static CommentDto from( CommentEntity entity) {
         return CommentDto.builder()
         .id ( entity.getId() )
         .content ( entity.getContent() )
@@ -40,6 +38,7 @@ public class CommentDto {
         .author ( entity.getAuthor() )
         .createdAt ( entity.getCreatedAt() )
         .updatedAt ( entity.getUpdatedAt() )
+        .boardId (entity.getBoardEntity().getId() )
         .build();
     }
 }

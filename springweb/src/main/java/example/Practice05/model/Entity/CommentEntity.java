@@ -1,5 +1,7 @@
 package example.Practice05.model.Entity;
 
+ 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -30,5 +32,4 @@ public class CommentEntity extends BaseTime {
  @JoinColumn ( name = "board_id")
  private BoardEntity boardEntity;
 }
-
  

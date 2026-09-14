@@ -10,6 +10,8 @@ import example.Practice05.model.Entity.BoardEntity;
 import example.Practice05.model.dto.BoardDto;
 import example.Practice05.model.dto.CommentDto;
 import example.Practice05.model.repository.BoardRepository;
+import example.Practice05.model.repository.CommentRepository;
+import jakarta.websocket.server.ServerEndpoint;
 
 @Service
 public class BoardService {
@@ -26,7 +28,7 @@ public class BoardService {
         boardEntities.forEach( (boardEntity) -> {    
             BoardDto boardDto = BoardDto.from(boardEntity);  
             boardEntity.getCommentEntities().forEach((commentEntity) -> {  
-                CommentDto commentDto = CommentDto.from( boardEntity );
+                CommentDto commentDto = CommentDto.from( commentEntity );
                 boardDto.getComments().add(commentDto);
             });
             boardDtos.add(boardDto);
